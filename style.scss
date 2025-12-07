@@ -60,11 +60,12 @@ display: none !important;}
 
 header input{
 position: absolute;
-z-index: 9999;
+z-index: 99999;
 right: 400px;
 top: 47px;
 transform: scale(2);
 display: none;
+opacity: 0;
 }
 
 header input:checked + .mobileNav {
@@ -135,25 +136,28 @@ header input:checked + .mobileNav {
   .first ul{ display: none;}
   .second button { display: none;}
   header input { display: block !important;}
-  nav{
-    
-
-  }
+  
 }
 
+
+
 .barbar {
-  background-image: url("ajajajjajjajajaajajajajajajajajajajajajaj.jpg");
   height: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: sticky;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  backdrop-filter: blur(5px) brightness(70%);
+  position: relative;
+}
+
+.barbar img{
+position: absolute;
+width: 100%;
+height: 600px;
+object-fit: cover;
+object-position: center;
+ filter: brightness(0.4);
 }
 
 
@@ -543,6 +547,18 @@ footer {
   }
 }
 
+.about3{
+height: 500px;
+width: 100%;
+
+}
+
+.about3 video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 
 .mainabout4{
   display: flex;
@@ -564,13 +580,6 @@ footer {
     font-size: large;
   }
 }}
-
-video{
-  position: fixed;
-  width: 100%;
-  height: 400px;
-
-}
 
 .team {
       display: grid;
@@ -741,7 +750,7 @@ video{
     .left1{
     color: #371103;
     width: 600px;
-    margin: 70px 0 100px 0;
+    padding: 180px 0 100px 0  ;
     p{
       font-size: 18px;
       padding: 5px 0;
@@ -769,6 +778,7 @@ video{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 30px;
     .haircuts
     img{
         width: 400px;
@@ -908,7 +918,6 @@ video{
             padding: 130px 20px 0 20px
         }
 
-        /* Sidebar */
         .sidebar {
             width: 200px;
             padding-right: 40px;
@@ -1096,7 +1105,7 @@ video{
         .product-card:nth-child(5) { animation-delay: 0.5s; }
         .product-card:nth-child(6) { animation-delay: 0.6s; }
 
-
+        
         .pagination {
             display: flex;
             justify-content: center;
