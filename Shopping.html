@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
     <nav>
       <div class="first">
         <a href="index.html"><h1>ALVARO</h1></a>
@@ -20,7 +21,7 @@
       </div>
       <div class="second">
         <a href="Shopping.html"><i class="fa-solid fa-bag-shopping"></i></a>
-        <a href=""><button>BOOK NOW</button></a>
+        <a href="Shopping.html"><button>BOOK NOW</button></a>
       </div>
     </nav>
     <input type="checkbox" name="" id="" />
@@ -32,5 +33,178 @@
           <button>BOOK NOW</button>
       </ul>
   </header>
+     <div class="container">
+        <aside class="sidebar">
+            <h3>Browse by</h3>
+            <a href="#page1">All products</a>
+        </aside>
+
+        <main class="main-content">
+            <div class="header">
+                <h1>ALL PRODUCTS</h1>
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="🔍 SEARCH ALL PRODUCTS">
+                </div>
+                <div class="filter-bar">
+                    <span>12 products</span>
+                    <div>
+                        <label>Sort by:</label>
+                        <select>
+                            <option>Default</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Name: A-Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="page" id="page1">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image bg-1">
+                            <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500" alt="Classic Cap">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Classic Cap</h3>
+                            <p class="product-price">$18.00</p>
+                            <button class="add-to-bag">Add to bag</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image bg-2">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500" alt="Face Serum">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Face Serum</h3>
+                            <p class="product-price">$33.00</p>
+                            <button class="add-to-bag">Add to bag</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image bg-3">
+                            <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=500" alt="Handmade Vase">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Handmade Vase</h3>
+                            <p class="product-price">$25.00</p>
+                            <button class="add-to-bag">Add to bag</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image bg-4">
+                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500" alt="Hand Soap">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Hand Soap</h3>
+                            <p class="product-price">$10.00</p>
+                            <button class="add-to-bag">Add to bag</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image bg-5">
+                            <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=500" alt="Set of Plates">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Set of Plates</h3>
+                            <p class="product-price">$38.00</p>
+                            <button class="add-to-bag">Add to bag</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image bg-6">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500" alt="Sunglasses">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sunglasses</h3>
+                            <p class="product-price">$48.00</p>
+                            <button class="add-to-bag">Add to bag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page" id="page2">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image bg-7">
+                            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500" alt="Wooden Chair">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Wooden Chair</h3>
+                            <p class="product-price">$152.00</p>
+                            <button class="add-to-bag">Add to bag</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image bg-8">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500" alt="Wool Sweater">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Wool Sweater</h3>
+                            <p class="product-price">$65.00</p>
+                            <button class="add-to-bag">Add to bag</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image bg-9">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500" alt="Creative Course">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Creative Course Session</h3>
+                            <p class="product-price">$35.00 | 45 min</p>
+                            <button class="add-to-bag">Book now</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image bg-10">
+                            <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=500" alt="Fitness Class">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Group Fitness Class</h3>
+                            <p class="product-price">$10.00 | 1 h</p>
+                            <button class="add-to-bag">Book now</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image bg-11">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500" alt="Coaching Session">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Individual Coaching Session</h3>
+                            <p class="product-price">$60.00 | 1 h</p>
+                            <button class="add-to-bag">Book now</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image bg-12">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500" alt="Language Tutoring">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Intro Language Tutoring Session</h3>
+                            <p class="product-price">Free | 45 min</p>
+                            <button class="add-to-bag">Book now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#page1" class="page-link prev-link">&lt;</a>
+                <span class="page-number">
+                    <span class="page1-indicator">1</span>
+                    <span class="page2-indicator">2</span>
+                </span>
+                <a href="#page2" class="page-link next-link">&gt;</a>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
