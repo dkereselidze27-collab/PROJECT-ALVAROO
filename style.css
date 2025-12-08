@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 body {
@@ -51,7 +53,7 @@ li a {
   color: #371103;
 }
 
-.first i {
+.second .fa-bars {
   color: #371103;
   transform: scale(1.5);
   display: none !important;
@@ -60,10 +62,10 @@ li a {
 header input {
   position: absolute;
   z-index: 99999;
-  right: 400px;
+  right: 410px;
   top: 47px;
-  transform: scale(2);
-  display: none;
+  transform: scale(4);
+  display: none !important;
   opacity: 0;
 }
 
@@ -142,6 +144,10 @@ header input:checked + .mobileNav {
   }
   header input {
     display: block !important;
+  }
+  .aboutus {
+    display: flex;
+    flex-direction: column !important;
   }
 }
 .barbar {
@@ -495,6 +501,23 @@ footer {
   color: white;
 }
 
+@media screen and (max-width: 800px) {
+  .first i {
+    display: block !important;
+  }
+  .first ul {
+    display: none;
+  }
+  .first {
+    gap: 40px;
+  }
+  .second button {
+    display: none;
+  }
+  header input {
+    display: block !important;
+  }
+}
 .about1 {
   display: flex;
   align-items: center;
@@ -1215,5 +1238,637 @@ body:not(:has(:target)) .pagination .prev-link {
   }
   .product-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .first {
+    gap: 40px;
+  }
+  .second {
+    gap: 20px;
+  }
+  .barbar {
+    height: 500px;
+  }
+  .style {
+    width: 400px;
+  }
+  .style h1 {
+    font-size: 40px;
+  }
+  .aboutus {
+    gap: 80px;
+    flex-direction: row;
+  }
+  .iformation {
+    width: 350px;
+  }
+  .shaving {
+    width: 450px;
+    height: 400px;
+  }
+  .images .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 250px;
+    height: 220px;
+  }
+  .fresh {
+    height: 250px;
+  }
+  .look h1 {
+    font-size: 40px;
+  }
+  .line {
+    width: 350px;
+  }
+  .questions {
+    gap: 60px;
+  }
+  .question1,
+  .question2,
+  .question3,
+  .question4,
+  .question5,
+  .question6 {
+    max-width: 400px;
+  }
+  footer {
+    gap: 100px;
+  }
+  .about1 {
+    gap: 100px;
+  }
+  .about1 .left {
+    width: 500px;
+  }
+  .about1 .left h1 {
+    font-size: 55px;
+  }
+  .about1 .right {
+    width: 350px;
+    height: 400px;
+  }
+  .about2 {
+    gap: 100px;
+  }
+  .about2 .left {
+    width: 400px;
+    height: 400px;
+  }
+  .about2 .right {
+    width: 400px;
+  }
+  .about2 .right h1 {
+    font-size: 40px;
+  }
+  .about3 {
+    height: 400px;
+  }
+  .mainabout4 .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonials-container {
+    gap: 40px;
+  }
+  .testimonials-container .left-section h1 {
+    font-size: 50px;
+  }
+  .testimonials-container .stats {
+    gap: 40px;
+  }
+  .gallery1 {
+    gap: 100px;
+  }
+  .gallery1 .left1 {
+    width: 500px;
+  }
+  .gallery1 .left1 h1 {
+    font-size: 50px;
+  }
+  .gallery1 .right1 {
+    width: 250px;
+    height: 250px;
+  }
+  .maingallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .maingallery .haircuts img {
+    width: 100%;
+  }
+  .contact1 {
+    gap: 60px;
+  }
+  .contact1 .left-column h1 {
+    font-size: 3.5rem;
+  }
+  .container {
+    padding: 100px 15px 0 15px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .first i {
+    display: block !important;
+  }
+  .first ul {
+    display: none;
+  }
+  .second button {
+    display: none;
+  }
+  header input {
+    display: block !important;
+    right: 20px;
+  }
+  .barbar {
+    height: 400px;
+  }
+  .barbar img {
+    height: 400px;
+  }
+  .style {
+    width: 300px;
+  }
+  .style h1 {
+    font-size: 30px;
+  }
+  .style p {
+    font-size: medium;
+  }
+  .upper {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
+  .aboutus {
+    flex-direction: column !important;
+    gap: 40px;
+    margin: 50px 0 80px 0;
+  }
+  .iformation {
+    width: 90%;
+    text-align: center;
+  }
+  .shaving {
+    width: 90%;
+    height: 300px;
+  }
+  .galerea .images {
+    flex-direction: column;
+  }
+  .images .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 90%;
+    height: 250px;
+  }
+  .fresh {
+    height: 200px;
+  }
+  .look h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .line {
+    width: 80%;
+  }
+  .look p {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .questions {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .question1,
+  .question2,
+  .question3,
+  .question4,
+  .question5,
+  .question6 {
+    max-width: 90%;
+    text-align: center;
+  }
+  footer {
+    flex-direction: column !important;
+    height: auto;
+    padding: 40px 20px;
+    gap: 40px;
+    text-align: center;
+  }
+  .right {
+    width: 90%;
+  }
+  .left {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .navigation ul {
+    align-items: center;
+  }
+  .address,
+  .contacts {
+    width: 100%;
+  }
+  .about1 {
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 0 80px 0;
+    padding: 100px 20px 0 20px;
+  }
+  .about1 .left {
+    width: 90%;
+    text-align: center;
+  }
+  .about1 .left h1 {
+    font-size: 45px;
+  }
+  .about1 .left p {
+    font-size: medium;
+  }
+  .about1 .right {
+    width: 90%;
+    height: 300px;
+  }
+  .about2 {
+    flex-direction: column-reverse;
+    gap: 50px;
+    margin: 0 0 80px 0;
+  }
+  .about2 .left {
+    width: 90%;
+    height: 300px;
+  }
+  .about2 .right {
+    width: 90%;
+    text-align: center;
+  }
+  .about2 .right h1 {
+    font-size: 35px;
+  }
+  .about2 .right p {
+    font-size: 18px;
+  }
+  .about3 {
+    height: 300px;
+  }
+  .mainabout4 {
+    padding: 40px 20px;
+  }
+  .mainabout4 .about4 {
+    max-width: 90%;
+  }
+  .mainabout4 .about4 h1 {
+    font-size: 40px;
+  }
+  .mainabout4 .about4 p {
+    font-size: 16px;
+  }
+  .mainabout4 .team {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .mainabout4 .team .member img {
+    height: 250px;
+  }
+  .mainabout4 .team h2 {
+    font-size: 24px;
+  }
+  .testimonials-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  .testimonials-container .left-section {
+    text-align: center;
+  }
+  .testimonials-container .left-section h1 {
+    font-size: 40px;
+  }
+  .testimonials-container .left-section .stats {
+    justify-content: center;
+    gap: 30px;
+  }
+  .testimonials-container .left-section .scissors-img {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .testimonials-container .right-section .review {
+    text-align: center;
+  }
+  .gallery1 {
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 20px 0 20px;
+  }
+  .gallery1 .left1 {
+    width: 90%;
+    text-align: center;
+    padding: 0;
+  }
+  .gallery1 .left1 h1 {
+    font-size: 40px;
+  }
+  .gallery1 .left1 p {
+    font-size: 16px;
+  }
+  .gallery1 .right1 {
+    width: 90%;
+    height: 200px;
+  }
+  .maingallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 100px 0px;
+    margin: 0 auto;
+  }
+  .maingallery .haircuts img {
+    width: 50%;
+  }
+  .contact1 {
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 20px 0 20px;
+  }
+  .contact1 .left-column {
+    text-align: center;
+  }
+  .contact1 .left-column h1 {
+    font-size: 3rem;
+  }
+  .contact1 .left-column .social-icons {
+    justify-content: center;
+  }
+  .contact1 .right-column {
+    width: 100%;
+  }
+  .contact1 .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .second .fa-bars {
+    display: block !important;
+  }
+  .container {
+    flex-direction: column;
+    padding: 100px 15px 0 15px;
+  }
+  .sidebar {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .filter-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav {
+    height: 80px;
+    padding: 0 10px;
+  }
+  .first h1 {
+    font-size: 24px;
+  }
+  .second {
+    gap: 10px;
+  }
+  .fa-bag-shopping {
+    font-size: large;
+  }
+  .mobileNav {
+    font-size: 18px;
+    gap: 30px;
+  }
+  .mobileNav button {
+    width: 140px;
+    height: 40px;
+  }
+  .barbar {
+    height: 300px;
+  }
+  .barbar img {
+    height: 300px;
+  }
+  .style {
+    width: 90%;
+  }
+  .style h1 {
+    font-size: 24px;
+  }
+  .style p {
+    font-size: small;
+  }
+  .style button {
+    width: 150px;
+    height: 40px;
+    font-size: medium;
+  }
+  .upper h1 {
+    font-size: large !important;
+  }
+  .aboutus {
+    margin: 40px 0 60px 0;
+  }
+  .iformation h1 {
+    font-size: 30px;
+  }
+  .iformation button {
+    width: 140px;
+    height: 40px;
+  }
+  .info {
+    font-size: medium;
+  }
+  .shaving {
+    height: 250px;
+  }
+  .gallery h1 {
+    font-size: 30px;
+  }
+  .galerea button {
+    width: 160px;
+    height: 50px;
+    margin: 30px 0 80px 0;
+  }
+  .fresh {
+    height: 180px;
+  }
+  .look h1 {
+    font-size: 24px;
+  }
+  .look p {
+    font-size: medium;
+  }
+  .look button {
+    width: 160px;
+    height: 50px;
+    font-size: medium;
+    margin: 20px 0 0 0;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .questions {
+    gap: 30px;
+  }
+  footer {
+    padding: 30px 10px;
+    gap: 30px;
+  }
+  .right h1 {
+    font-size: 30px;
+  }
+  .right p {
+    font-size: large;
+  }
+  .sites {
+    justify-content: center;
+    gap: 20px;
+    font-size: large;
+  }
+  .navigation ul li a {
+    font-size: medium;
+  }
+  .about1 {
+    padding: 90px 10px 0 10px;
+  }
+  .about1 .left h1 {
+    font-size: 35px;
+  }
+  .about1 .left p {
+    font-size: small;
+  }
+  .about1 .right {
+    height: 250px;
+  }
+  .about2 .right h1 {
+    font-size: 30px;
+  }
+  .about2 .right p {
+    font-size: 16px;
+  }
+  .about2 .left {
+    height: 250px;
+  }
+  .about3 {
+    height: 200px;
+  }
+  .mainabout4 {
+    padding: 30px 10px;
+  }
+  .mainabout4 .about4 h1 {
+    font-size: 30px;
+  }
+  .mainabout4 .about4 p {
+    font-size: 14px;
+  }
+  .mainabout4 .team {
+    grid-template-columns: 1fr;
+  }
+  .mainabout4 .team .member img {
+    height: 200px;
+  }
+  .mainabout4 .team h2 {
+    font-size: 20px;
+  }
+  .testimonials-container {
+    gap: 30px;
+  }
+  .testimonials-container .left-section h1 {
+    font-size: 30px;
+  }
+  .testimonials-container .stats {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .testimonials-container .stats .stat h2 {
+    font-size: 50px;
+  }
+  .testimonials-container .right-section .review h3 {
+    font-size: 20px;
+  }
+  .testimonials-container .right-section .review p {
+    font-size: 14px;
+  }
+  .gallery1 {
+    padding: 90px 10px 0 10px;
+  }
+  .gallery1 .left1 h1 {
+    font-size: 30px;
+  }
+  .gallery1 .left1 p {
+    font-size: 14px;
+  }
+  .gallery1 .right1 {
+    height: 150px;
+  }
+  .maingallery {
+    grid-template-columns: 1fr;
+  }
+  .maingallery .haircuts img {
+    width: 100%;
+  }
+  .contact1 {
+    padding: 90px 10px 0 10px;
+  }
+  .contact1 .left-column h1 {
+    font-size: 2.5rem;
+  }
+  .contact1 .contact-info p {
+    font-size: 1rem;
+  }
+  .form-group input,
+  textarea {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+  .contactbutton button {
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .container {
+    padding: 90px 10px 0 10px;
+  }
+  .header h1 {
+    font-size: 24px;
+  }
+  .product-image {
+    height: 250px;
+  }
+  .product-title {
+    font-size: 14px;
+  }
+  .add-to-bag {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .pagination {
+    gap: 10px;
+  }
+  .page-link {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
